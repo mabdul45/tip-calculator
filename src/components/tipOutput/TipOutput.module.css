@@ -1,0 +1,46 @@
+.TipOutput {
+    border-radius: 20px;
+    background-color: hsl(183, 100%, 15%);
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    width: 30rem;
+    max-width: 30rem;
+    font-size: 1.8rem;
+    padding: 3rem;
+    color: hsl(172, 67%, 45%);
+    font-weight: 700;
+}
+
+.TipOutput > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.TipOutput > div > div > p:first-child {
+    color: hsl(0, 0%, 100%);
+}
+
+.TipOutput > div > div > p:last-child {
+    font-size: 1.4rem;
+    color: hsl(184, 14%, 56%);
+}
+
+.TipOutput > div > p {
+font-size: 2.4rem;
+}
+
+.TipOutput button {
+    background-color: hsl(172, 67%, 45%);
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: hsl(183, 100%, 15%);
+    padding: 2rem 4rem;
+    border-radius: 10px;
+    border-width: 0;
+    border-style: none;
+    margin-top: 8rem;
+    cursor: pointer;
+}
