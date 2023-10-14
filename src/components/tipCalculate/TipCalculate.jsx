@@ -1,4 +1,4 @@
-import styles from './tipCalculate.module.css'
+import styles from './TipCalculate.module.css'
 import iconPerson from '../../images/icon-person.svg'
 import iconDollar from '../../images/icon-dollar.svg'
 import { useState } from 'react'
