@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import TipOutput from "../../components/TipOutput/TipOutput"
+import TipOutput from "../../components/tipOutput/TipOutput"
 import Card from "../../components/card/Card"
 import TipCalculate from "../../components/tipCalculate/TipCalculate"
 

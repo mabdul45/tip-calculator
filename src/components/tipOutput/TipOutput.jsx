@@ -4,7 +4,6 @@ import styles from './TipOutput.module.css'
 
 const TipOutput = ({ output }) => {
     const [resetClicked, setResetClicked] = useState(true)
-    console.log(output)
 
     const handleReset = () => {
         setResetClicked(prev => !prev)

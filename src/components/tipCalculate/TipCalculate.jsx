@@ -12,7 +12,6 @@ const TipCalculate = (props) => {
     const tips = ['5', '10', '15', '25', '50']
 
     const handleTipSelected = (e) => {
-        console.log(e ? e.target.value : customInput, customInput)
 
         const tipSelected = e ? e.target.value : customInput
         if (!person) {
@@ -25,7 +24,6 @@ const TipCalculate = (props) => {
             setperson(0)
             setBill(0)
             setCustomInput(0)
-            console.log(tipSelected, person)
         }
 
     }
@@ -36,7 +34,6 @@ const TipCalculate = (props) => {
         setCustomInput(customInput)
         setTimeout(() => handleTipSelected(), 3000)
         // handleTipSelected(customInput)
-        console.log(e.target.value)
 
     }
 
@@ -54,13 +51,11 @@ const TipCalculate = (props) => {
     const handleBill = (e) => {
         const bill = e.target.value
         setBill(bill)
-        console.log(bill)
     }
 
     const calculateTip = (tipSelected, person) => {
         const tip = bill / tipSelected
         const tipPerPerson = tip / person
-        console.log(tipPerPerson)
         props.output(tipPerPerson, tip)
     }
     return (
@@ -75,12 +70,12 @@ const TipCalculate = (props) => {
             <div className={styles.tip}>
                 <p>Select tip %</p>
                 <div>
-                    {tips.map((tip) => {
+                    {tips.map((tip, i) => {
 
                         return (
                             <>
                                 <button
-                                    key={tip}
+                                    key={tip + i}
                                     onClick={handleTipSelected}
                                     value={tip}
                                 >{tip}%</button>
